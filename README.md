@@ -1,9 +1,15 @@
+[![hackmd-github-sync-badge](https://hackmd.io/DFESNuxzT4O4zQCjZ_CwDw/badge)](https://hackmd.io/DFESNuxzT4O4zQCjZ_CwDw)
 ###### tags: `github README.md`
 
 NCU semester sruvey
 ====
 
 NCU semester sruvey automatic analysis system, input a survey sheet, return the sum of answer check on the question box.
+
+## Requirement
+opencv-python
+
+numpy
 
 ## Usage
 
@@ -41,6 +47,13 @@ python3 sruvey.py --class_name "THE CLASS NAME YOU WANT TO ANALYSIS"
 ```
 
 And there you have it !
+
+## Result
+
+The system would generate two folders under `--class_name CLASS_NAME` folder. `./answer_image` and `./writen_image`
+
+* `./answer_image` The bounding box of detection image result would save in this folder
+* `./writen_image` If there have any writen answer in writen question blank, save in this folder
 
 ## TODO
 
